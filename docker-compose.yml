@@ -32,7 +32,7 @@ services:
         environment:
             - PUID=1028
             - PGID=65537
-            - TZ=Europe/London
+            - TZ=Asia/Taipei
             - CHARACTERS_DB=classiccharacters
             - MANGOSD_DB=classicmangos
             - REALMD_DB=classicrealmd
@@ -66,7 +66,7 @@ services:
         environment:
             - PUID=1028
             - PGID=65537
-            - TZ=Europe/London
+            - TZ=Asia/Taipei
             - REALMD_DB=classicrealmd
             - DB_USER=mangos
             - DB_PASS=mangos
