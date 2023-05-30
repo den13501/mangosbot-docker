@@ -6,7 +6,7 @@ ARG CORE_COMMIT_HASH=HEAD \
     DB_COMMIT_HASH=HEAD
 
 # Set Timezone and Build arguments
-ENV TZ=Europe/Amsterdam \
+ENV TZ=Asia/Taipei \
     ENV_CORE_COMMIT_HASH=$CORE_COMMIT_HASH \
     ENV_DB_COMMIT_HASH=$DB_COMMIT_HASH
 	
