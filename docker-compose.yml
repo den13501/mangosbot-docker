@@ -22,7 +22,7 @@ services:
             #- ./db/init:/docker-entrypoint-initdb.d:ro
         restart: "unless-stopped"
         environment:
-            - TZ=Europe/London
+            - TZ=Asia/Taipei
             - MYSQL_ROOT_PASSWORD=mangos
 
     mangosd:
@@ -50,7 +50,7 @@ services:
         restart: "unless-stopped"
         stop_grace_period: 15m # The amount of seconds to wait before killing the container forcefully (if the server has a lot of bots is recommended to increase this)
         environment:
-            - TZ=Europe/London
+            - TZ=Asia/Taipei
             - CHARACTERS_DB=classiccharacters
             - MANGOSD_DB=classicmangos
             - REALMD_DB=classicrealmd
@@ -84,7 +84,7 @@ services:
             - "/etc/localtime:/etc/localtime:ro"
         restart: "unless-stopped"
         environment:
-            - TZ=Europe/London
+            - TZ=Asia/Taipei
             - REALMD_DB=classicrealmd
             - DB_USER=mangos
             - DB_PASS=mangos
